@@ -3,7 +3,7 @@
 Scripts and code to make a slack bot that's almost, but not quite entirely unlike Libby.
 
 This code is a couple of hours' work and therefore adapts others' code and may in places be shit. All the shit parts are 
-mine.
+mine. It uses python for the ML parts, node for the slackbot and ruby and bash for scripting.
 
 see http://planb.nicecupoftea.org for more detail.
 
@@ -75,6 +75,7 @@ python3 src/real_libby_server.py
 sudo apt-get install npm
 npm install
 SLACK_API_TOKEN="xxx" node robo_libby.js
+```
 
 ## Add systemd scripts
 
