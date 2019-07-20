@@ -1,0 +1,15 @@
+[Unit]
+Description=Real Libby Server Service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/env/gpt-2/
+ExecStart=/home/pi/env/bin/python3 src/real_libby_server.py
+Restart=on-failure
+StandardOutput=syslog
+SyslogIdentifier=real_libby_server
+Type=idle
+User=pi
+
+[Install]
+WantedBy=multi-user.target

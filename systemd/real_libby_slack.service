@@ -1,0 +1,15 @@
+[Unit]
+Description=Real Libby Slack Bot
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/env/gpt-2/
+ExecStart=/usr/bin/env SLACK_API_TOKEN="xxx" /usr/bin/node real_libby_slackbot.js
+Restart=on-failure
+StandardOutput=syslog
+SyslogIdentifier=real_libby_slack_bot
+Type=idle
+User=pi
+
+[Install]
+WantedBy=multi-user.target
