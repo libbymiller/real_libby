@@ -33,7 +33,7 @@ network={
 
 Boot up the pi and log in.
 
-## use virtualenv
+## Use virtualenv
 
 ```
 virtualenv -p python3 env
@@ -41,7 +41,7 @@ cd env/
 source bin/activate
 ```
 
-## download the gpt-2 model
+## Download the gpt-2 model
 
 Not actually sure if this is needed if you've built your own model, but anyway
 
