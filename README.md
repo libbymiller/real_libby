@@ -5,7 +5,7 @@ Scripts and code to make a slack bot that's almost, but not quite entirely unlik
 This code is a couple of hours' work and therefore adapts others' code and may in places be shit. All the shit parts are 
 mine. It uses python for the ML parts, node for the slackbot and ruby and bash for scripting.
 
-see http://planb.nicecupoftea.org for more detail.
+see https://planb.nicecupoftea.org/2019/07/20/real_libby-a-gpt-2-based-slackbot/ for more detail.
 
 
 # For a Pi 4
