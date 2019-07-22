@@ -42,7 +42,9 @@ var exclude = []; // text as a list here
 function test_exclude(ts){
 
    for (var i=0; i< exclude.length; i++){
-     ts = ts.toLowerCase().replace(exclude[i],"")
+     var regex = new RegExp( exclude[i], 'gi' );
+     ts = ts.replace(regex," ")
+
    }
    return ts.trim();
 }
@@ -69,7 +71,8 @@ function respond_to_message(message, message_text){
                console.log("to_send "+ts);
                for(var i=0; i< to_send.length; i++){
                  ts = to_send[i];
-                 if(test_exclude(ts)!=""){
+                 ts = test_exclude(ts);
+                 if(ts!=""){
                      break;
                  }
                }
