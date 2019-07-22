@@ -74,7 +74,7 @@ python3 src/real_libby_server.py
 ```
 sudo apt-get install npm
 npm install
-SLACK_API_TOKEN="xxx" node robo_libby.js
+SLACK_API_TOKEN="xxx" node real_libby_slackbot.js
 ```
 
 ## Add systemd scripts
