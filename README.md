@@ -77,6 +77,8 @@ npm install
 SLACK_API_TOKEN="xxx" node real_libby_slackbot.js
 ```
 
+`real_libby_multi_slackbot.js` is a special version for when there are several bots and you want them to communicate.
+
 ## Add systemd scripts
 
 ```
