@@ -89,4 +89,10 @@ systemctl enable /lib/systemd/system/real_libby_slack.service
 sudo systemctl start real_libby_slack.service
 ```
 
+## Running more than one
 
+use 
+
+```BOT_NAME="real_tim" SLACK_API_TOKEN="xxxx" /usr/bin/node slackbots/real_libby_multi_slackbot.js```
+
+with a config file (see example)

@@ -1,0 +1,15 @@
+{
+  "real_libby": {
+     "matches": ["real_libby","<@XXXXX>","<!here>"],
+     "port":"8080",
+     "channel":"XXXXX",
+     "spontaneous_speech_percent":25,
+     "decide_whether_to_speak_interval_secs": 120,
+     "spontaneous_wait_time_min_secs": 50,
+     "spontaneous_wait_time_max_secs": 700,
+     "percent_reply_to":10,
+     "percent_reply_randomly":10,
+     "prompts_file":"prompts.txt"
+  }
+}
+
