@@ -49,7 +49,7 @@ function test_exclude(ts){
      ts = ts.replace(regex," ")
 
    }
-   console.log(ts.trim());
+   ts = ts.replace(/\s\s/g, " ")
    return ts.trim();
 }
 
