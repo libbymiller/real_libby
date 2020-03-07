@@ -42,10 +42,14 @@ var exclude = []; // text as a list here
 function test_exclude(ts){
 
    for (var i=0; i< exclude.length; i++){
-     var regex = new RegExp( exclude[i], 'gi' );
+     var rr = "(\\W"+exclude[i]+"|"+exclude[i]+"\\W)";
+     console.log(rr);
+
+     var regex = new RegExp( rr, 'gi' );
      ts = ts.replace(regex," ")
 
    }
+   console.log(ts.trim());
    return ts.trim();
 }
 
