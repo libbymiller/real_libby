@@ -48,7 +48,6 @@ Not actually sure if this is needed if you've built your own model, but anyway
 
 ```
 git clone https://github.com/nshepperd/gpt-2.git
-git checkout finetuning
 cd gpt-2/
 git checkout finetuning
 pip3 install -r requirements.txt 
@@ -86,8 +85,10 @@ SLACK_API_TOKEN="xxx" node real_libby_slackbot.js
 sudo cp systemd/*.service /lib/systemd/system/
 sudo systemctl enable /lib/systemd/system/real_libby_server.service
 sudo systemctl start real_libby_server.service
-systemctl enable /lib/systemd/system/real_libby_slack.service
+sudo systemctl enable /lib/systemd/system/real_libby_slack.service
 sudo systemctl start real_libby_slack.service
+
+sudo tail -f /var/log/syslog 
 ```
 
 ## Running more than one
