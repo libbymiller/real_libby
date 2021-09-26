@@ -42,9 +42,7 @@ cd env/
 source bin/activate
 ```
 
-## Download the gpt-2 model
-
-Not actually sure if this is needed if you've built your own model, but anyway
+## Download checkout the gpt-2 finetuning repo
 
 ```
 git clone https://github.com/nshepperd/gpt-2.git
