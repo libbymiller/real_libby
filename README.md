@@ -51,7 +51,7 @@ git clone https://github.com/nshepperd/gpt-2.git
 cd gpt-2/
 git checkout finetuning
 pip3 install -r requirements.txt 
-python3 src/download_model.py 117M
+mkdir models
 ```
 
 ## Add the fine-tuned model
@@ -80,6 +80,8 @@ SLACK_API_TOKEN="xxx" node real_libby_slackbot.js
 `real_libby_multi_slackbot.js` is a special version for when there are several bots and you want them to communicate.
 
 ## Add systemd scripts
+
+Edit real_libby_slack.service to add the slack api token, then
 
 ```
 sudo cp systemd/*.service /lib/systemd/system/
