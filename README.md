@@ -40,7 +40,7 @@ sudo apt-get install python3-venv
 python3 -m venv env
 cd env/
 source bin/activate
-sudo apt install git python-dev
+sudo apt install git python3-dev
 ```
 
 ## Download checkout the gpt-2 finetuning repo
