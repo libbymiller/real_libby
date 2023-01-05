@@ -3,14 +3,14 @@
 Scripts and code to make a slack bot that's almost, but not quite entirely unlike Libby.
 
 This code is a couple of hours' work and therefore adapts others' code and may in places be shit. All the shit parts are 
-mine. It uses python for the ML parts, node for the slackbot and ruby and bash for scripting.
+mine. It uses python for the ML parts, node for the slackbot.
 
-see https://planb.nicecupoftea.org/2019/07/20/real_libby-a-gpt-2-based-slackbot/ for more detail.
+see https://planb.nicecupoftea.org/2023/01/06/updated-real_libby-gpt-2-chatbot/ for some tips on getting data and retraining it, and https://planb.nicecupoftea.org/2019/07/20/real_libby-a-gpt-2-based-slackbot/ for the original post.
 
 
 # For a Pi 4
 
-Burn a 16GB+ SD card using Etcher
+Burn a 16GB+ SD card using the Pi imager. I used Buster ('legacy').
 
 then, on a laptop
 
@@ -61,7 +61,7 @@ mkdir models
 mv ~/libby models/
 mv ~/real_libby_server.py src/
 pip3 install flask
-pip3 install numpy
+pip3 install numpy==1.20
 sudo apt-get install libatlas-base-dev
 curl -O https://www.piwheels.org/simple/tensorflow/tensorflow-1.13.1-cp37-none-linux_armv7l.whl
 pip3 install tensorflow-1.13.1-cp37-none-linux_armv7l.whl
@@ -75,6 +75,7 @@ sudo apt-get install npm
 npm install
 SLACK_API_TOKEN="xxx" node real_libby_slackbot.js
 ```
+(edit real_libby_slackbot.js to add the name of the bot, available by right clicking). This code uses old slack apis which are still just about working.
 
 `real_libby_multi_slackbot.js` is a special version for when there are several bots and you want them to communicate.
 
